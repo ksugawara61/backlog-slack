@@ -7,7 +7,7 @@
 backlogUrl = 'https://k2o.backlog.jp/'
 
 module.exports = (robot) ->
-  robot.router.post "/backlog-slack-k2o/:room", (req, res) ->
+  robot.router.post "/room/:room", (req, res) ->
     { room } = req.params
     { body } = req
     try
